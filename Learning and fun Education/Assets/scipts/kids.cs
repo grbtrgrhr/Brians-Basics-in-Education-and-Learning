@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Sprites;
-using UnityEngine.Analytics;
 
-public class kids : MonoBehaviour {
+public class kids : MonoBehaviour
+{
 
+
+    public enum State
+    {
+        PATROL,
+        CHASE
+    }
 	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+	void Start ()
+    { 
 		
 	}
 }
