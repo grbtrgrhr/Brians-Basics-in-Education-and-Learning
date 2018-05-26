@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FaceCamera : MonoBehaviour {
+public class FaceCamera : MonoBehaviour
+{
+    public Transform target;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Update()
+    {
+        if (target != null)
+            transform.rotation = target.rotation;
+    }
+
 }
